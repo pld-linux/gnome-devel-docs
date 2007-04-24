@@ -1,4 +1,5 @@
 Summary:	GNOME Developer Documentation
+Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
 Version:	2.19.1
 Release:	1
@@ -17,6 +18,10 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package contains the GNOME Handbook, the GNOME Documentation
 Style Guide and an Overview of the GNOME Platform.
+
+%description -l pl.UTF-8
+Ten pakiet zawiera podręczniki: "GNOME Handbook", "GNOME Documentation
+Style Guide" oraz "Overview of the GNOME Platform".
 
 %prep
 %setup -q
