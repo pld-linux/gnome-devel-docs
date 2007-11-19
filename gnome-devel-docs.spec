@@ -11,6 +11,8 @@ URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	gnome-doc-utils >= 0.12.0
+# support for --with-omf in find-lang.sh
+BuildRequires:	rpm-build >= 4.4.9-10
 BuildRequires:	rpmbuild(macros) >= 1.198
 Requires(post,postun):	scrollkeeper
 BuildArch:	noarch
@@ -41,7 +43,7 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang %{name} --with-gnome --all-name
+%find_lang %{name} --with-gnome --with-omf --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -55,15 +57,3 @@ rm -rf $RPM_BUILD_ROOT
 %files -f %{name}.lang
 %defattr(644,root,root,755)
 %doc AUTHORS ChangeLog NEWS README
-%dir %{_omf_dest_dir}/gdp-handbook
-%{_omf_dest_dir}/gdp-handbook/gdp-handbook-C.omf
-%dir %{_omf_dest_dir}/gdp-style-guide
-%{_omf_dest_dir}/gdp-style-guide/gdp-style-guide-C.omf
-%dir %{_omf_dest_dir}/hig-book
-%{_omf_dest_dir}/hig-book/hig-book-C.omf
-%dir %{_omf_dest_dir}/integration-guide
-%{_omf_dest_dir}/integration-guide/integration-guide-C.omf
-%dir %{_omf_dest_dir}/platform-overview
-%{_omf_dest_dir}/platform-overview/platform-overview-C.omf
-%lang(es) %{_omf_dest_dir}/platform-overview/platform-overview-es.omf
-%lang(it) %{_omf_dest_dir}/platform-overview/platform-overview-it.omf
