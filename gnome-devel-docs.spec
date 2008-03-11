@@ -1,16 +1,16 @@
 Summary:	GNOME Developer Documentation
 Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
-Version:	2.20.0
+Version:	2.22.0
 Release:	1
-License:	GPL
+License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/2.20/%{name}-%{version}.tar.bz2
-# Source0-md5:	64d6e3594b2c6422ea8d17b78f501020
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/2.22/%{name}-%{version}.tar.bz2
+# Source0-md5:	fde987f35c495fa16b9af1de9a6aed7b
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
-BuildRequires:	gnome-doc-utils >= 0.12.0
+BuildRequires:	gnome-doc-utils >= 0.12.1
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.198
 Requires(post,postun):	scrollkeeper
