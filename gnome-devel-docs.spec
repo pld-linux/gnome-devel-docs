@@ -1,12 +1,12 @@
 Summary:	GNOME Developer Documentation
 Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
-Version:	2.26.2
+Version:	2.28.1
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/2.26/%{name}-%{version}.tar.bz2
-# Source0-md5:	e07e79a0cf5c55c7a30ef6929aed7f1c
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/2.28/%{name}-%{version}.tar.bz2
+# Source0-md5:	8099366db75003bfa9aa940f32a5ea76
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -34,7 +34,7 @@ Style Guide" oraz "Overview of the GNOME Platform".
 %{__automake}
 %configure \
 	--disable-scrollkeeper
-%{__make}
+%{__make} -j1
 
 %install
 rm -rf $RPM_BUILD_ROOT
