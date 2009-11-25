@@ -10,7 +10,10 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/2.28/%{name}-%{
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	gettext-devel
 BuildRequires:	gnome-doc-utils >= 0.12.1
+BuildRequires:	libxml2-progs
+BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.198
 Requires(post,postun):	scrollkeeper
