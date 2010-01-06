@@ -10,6 +10,9 @@ Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/2.28/%{name}-%{
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
+BuildRequires:	docbook-dtd412-xml
+BuildRequires:	docbook-dtd42-xml
+BuildRequires:	docbook-dtd44-xml
 BuildRequires:	gettext-devel
 BuildRequires:	gnome-doc-utils >= 0.12.1
 BuildRequires:	libxml2-progs
