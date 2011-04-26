@@ -1,12 +1,12 @@
 Summary:	GNOME Developer Documentation
 Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
-Version:	3.0.0
+Version:	3.0.2
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.0/%{name}-%{version}.tar.bz2
-# Source0-md5:	cbc2c9b81d6035cf700a00762def6068
+# Source0-md5:	b5baa0f217772c14caeef70b97f504a4
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
