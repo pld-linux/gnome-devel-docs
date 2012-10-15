@@ -1,12 +1,12 @@
 Summary:	GNOME Developer Documentation
 Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
-Version:	3.4.1
+Version:	3.6.1
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.4/%{name}-%{version}.tar.xz
-# Source0-md5:	041dc56bda5a542c404351ea4efb2898
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.6/%{name}-%{version}.tar.xz
+# Source0-md5:	0429377077c6e41575ab479ffd5bc54c
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -21,7 +21,6 @@ BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.198
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
-Requires(post,postun):	scrollkeeper
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -50,16 +49,10 @@ rm -rf $RPM_BUILD_ROOT
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-%find_lang %{name} --with-gnome --with-omf --all-name
+%find_lang %{name} --with-gnome --all-name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
-
-%post
-%scrollkeeper_update_post
-
-%postun
-%scrollkeeper_update_postun
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
