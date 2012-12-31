@@ -1,12 +1,12 @@
 Summary:	GNOME Developer Documentation
 Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
-Version:	3.6.1
+Version:	3.6.2
 Release:	1
 License:	GFDL
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.6/%{name}-%{version}.tar.xz
-# Source0-md5:	0429377077c6e41575ab479ffd5bc54c
+# Source0-md5:	f39d38a26e9894e9cc36a7139cd1a4cc
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
