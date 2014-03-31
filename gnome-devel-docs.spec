@@ -1,12 +1,12 @@
 Summary:	GNOME Developer Documentation
 Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
-Version:	3.6.2
+Version:	3.12.0
 Release:	1
 License:	GFDL
 Group:		Documentation
-Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.6/%{name}-%{version}.tar.xz
-# Source0-md5:	f39d38a26e9894e9cc36a7139cd1a4cc
+Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.12/%{name}-%{version}.tar.xz
+# Source0-md5:	039ea2669864971821a3be843b794edc
 URL:		http://www.gnome.org/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -14,7 +14,7 @@ BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd42-xml
 BuildRequires:	docbook-dtd44-xml
 BuildRequires:	gettext-devel
-BuildRequires:	gnome-doc-utils >= 0.12.1
+BuildRequires:	itstool
 BuildRequires:	libxml2-progs
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(find_lang) >= 1.23
@@ -40,7 +40,7 @@ Style Guide" oraz "Overview of the GNOME Platform".
 %{__autoconf}
 %{__automake}
 %configure \
-	--disable-scrollkeeper
+	--disable-silent-rules
 %{__make} -j1
 
 %install
