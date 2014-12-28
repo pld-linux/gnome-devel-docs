@@ -13,7 +13,7 @@ BuildRequires:	automake
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd42-xml
 BuildRequires:	docbook-dtd44-xml
-BuildRequires:	gettext-devel
+BuildRequires:	gettext-tools
 BuildRequires:	itstool
 BuildRequires:	libxml2-progs
 BuildRequires:	pkgconfig
