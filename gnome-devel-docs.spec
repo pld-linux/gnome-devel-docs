@@ -3,12 +3,12 @@ Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
 Version:	3.16.2
 Release:	1
-License:	GFDL
+License:	FDL v1.1+, CC-BY-SA-3.0, CC-BY-SA-4.0
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.16/%{name}-%{version}.tar.xz
 # Source0-md5:	c846c48ff1b9ea522101a8b2afc8dc76
 URL:		http://www.gnome.org/
-BuildRequires:	autoconf
+BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	docbook-dtd412-xml
 BuildRequires:	docbook-dtd42-xml
@@ -21,6 +21,7 @@ BuildRequires:	rpmbuild(find_lang) >= 1.23
 BuildRequires:	rpmbuild(macros) >= 1.198
 BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
+BuildRequires:	yelp-tools
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -56,4 +57,4 @@ rm -rf $RPM_BUILD_ROOT
 
 %files -f %{name}.lang
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README
+%doc AUTHORS COPYING ChangeLog NEWS README
