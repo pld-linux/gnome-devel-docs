@@ -7,7 +7,7 @@ License:	FDL v1.1+, CC-BY-SA-3.0, CC-BY-SA-4.0
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.32/%{name}-%{version}.tar.xz
 # Source0-md5:	fdcc313545a3c7b0ae4ad173a59f7776
-URL:		https://www.gnome.org/
+URL:		https://wiki.gnome.org/DocumentationProject
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
 BuildRequires:	docbook-dtd412-xml
