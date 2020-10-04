@@ -1,12 +1,12 @@
 Summary:	GNOME Developer Documentation
 Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
-Version:	3.38.0
+Version:	3.38.1
 Release:	1
 License:	FDL v1.1+, CC-BY-SA-3.0, CC-BY-SA-4.0
 Group:		Documentation
 Source0:	http://ftp.gnome.org/pub/GNOME/sources/gnome-devel-docs/3.38/%{name}-%{version}.tar.xz
-# Source0-md5:	abb8be36d5ba27719169eb41872dddcf
+# Source0-md5:	a0c8c73d76a7d313b27cf18de37ff09c
 URL:		https://wiki.gnome.org/DocumentationProject
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
