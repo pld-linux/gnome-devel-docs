@@ -1,12 +1,12 @@
 Summary:	GNOME Developer Documentation
 Summary(pl.UTF-8):	Dokumentacja programisty GNOME
 Name:		gnome-devel-docs
-Version:	40.0
+Version:	40.3
 Release:	1
 License:	FDL v1.1+, CC-BY-SA-3.0, CC-BY-SA-4.0
 Group:		Documentation
 Source0:	https://download.gnome.org/sources/gnome-devel-docs/40/%{name}-%{version}.tar.xz
-# Source0-md5:	e107cd12aac0fc0eb725feabaf4e2701
+# Source0-md5:	c948513cb871e7ed6599f41d0f016195
 URL:		https://wiki.gnome.org/DocumentationProject
 BuildRequires:	autoconf >= 2.50
 BuildRequires:	automake
